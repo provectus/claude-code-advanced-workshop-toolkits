@@ -1,0 +1,24 @@
+{
+  "name": "corporeation-claude-plugin",
+  "owner": {
+    "name": "Claude Code Advanced Workshop",
+    "email": "mminasian-claudeai@provectus.com"
+  },
+  "metadata": {
+    "description": "Internal marketplace of shared Claude Code plugins for the Claude Code Advanced workshop.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "corporate-toolkit",
+      "source": "./plugins/corporate-toolkit",
+      "description": "Team-wide standards: standup command, PR description skill, security reviewer agent, and a hook that protects .env files.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Claude Code Advanced Workshop"
+      },
+      "category": "productivity",
+      "keywords": ["standards", "pr", "security", "hooks", "workshop"]
+    }
+  ]
+}

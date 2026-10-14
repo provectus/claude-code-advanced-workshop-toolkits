@@ -1,0 +1,11 @@
+{
+  "name": "corporate-toolkit",
+  "version": "1.0.0",
+  "description": "Team-wide standards: standup command, PR description skill, security reviewer agent, and a hook that protects .env files.",
+  "author": {
+    "name": "Claude Code Advanced Workshop",
+    "email": "mminasian-claudeai@provectus.com"
+  },
+  "license": "MIT",
+  "keywords": ["standards", "pr", "security", "hooks", "workshop"]
+}
