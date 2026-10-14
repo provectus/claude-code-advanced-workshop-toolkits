@@ -1,0 +1,11 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend engineering: TypeScript skill, TypeScript engineer agent, and the TypeScript language server for code intelligence.",
+  "author": {
+    "name": "Claude Code Advanced Workshop",
+    "email": "mminasian-claudeai@provectus.com"
+  },
+  "license": "MIT",
+  "keywords": ["frontend", "typescript", "lsp", "agent"]
+}

@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Internal marketplace of shared Claude Code plugins for the Claude Code Advanced workshop.",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -18,7 +18,78 @@
         "name": "Claude Code Advanced Workshop"
       },
       "category": "productivity",
-      "keywords": ["standards", "pr", "security", "hooks", "workshop"]
+      "keywords": [
+        "standards",
+        "pr",
+        "security",
+        "hooks",
+        "workshop"
+      ]
+    },
+    {
+      "name": "sdlc",
+      "source": "./plugins/sdlc",
+      "description": "Software delivery workflow: convention-aware commits and GitHub issues, PRs and reviews through the gh CLI.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Claude Code Advanced Workshop"
+      },
+      "category": "development",
+      "keywords": [
+        "sdlc",
+        "git",
+        "commit",
+        "github",
+        "pull-request"
+      ]
+    },
+    {
+      "name": "frontend",
+      "source": "./plugins/frontend",
+      "description": "Frontend engineering: TypeScript skill, TypeScript engineer agent, and the TypeScript language server for code intelligence.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Claude Code Advanced Workshop"
+      },
+      "category": "development",
+      "keywords": [
+        "frontend",
+        "typescript",
+        "lsp",
+        "agent"
+      ]
+    },
+    {
+      "name": "backend",
+      "source": "./plugins/backend",
+      "description": "Backend engineering: Kotlin skill and Kotlin engineer agent.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Claude Code Advanced Workshop"
+      },
+      "category": "development",
+      "keywords": [
+        "backend",
+        "kotlin",
+        "jvm",
+        "agent"
+      ]
+    },
+    {
+      "name": "misc",
+      "source": "./plugins/misc",
+      "description": "Miscellaneous utilities: search-kb skill and the qmd MCP server for local knowledge-base search.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Claude Code Advanced Workshop"
+      },
+      "category": "productivity",
+      "keywords": [
+        "knowledge-base",
+        "search",
+        "qmd",
+        "mcp"
+      ]
     }
   ]
 }

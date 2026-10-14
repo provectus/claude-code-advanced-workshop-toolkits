@@ -1,0 +1,11 @@
+{
+  "name": "misc",
+  "version": "1.0.0",
+  "description": "Miscellaneous utilities: search-kb skill and the qmd MCP server for local knowledge-base search.",
+  "author": {
+    "name": "Claude Code Advanced Workshop",
+    "email": "mminasian-claudeai@provectus.com"
+  },
+  "license": "MIT",
+  "keywords": ["knowledge-base", "search", "qmd", "mcp"]
+}

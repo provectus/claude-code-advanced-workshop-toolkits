@@ -1,0 +1,11 @@
+{
+  "name": "sdlc",
+  "version": "1.0.0",
+  "description": "Software delivery workflow: convention-aware commits and GitHub issues, PRs and reviews through the gh CLI.",
+  "author": {
+    "name": "Claude Code Advanced Workshop",
+    "email": "mminasian-claudeai@provectus.com"
+  },
+  "license": "MIT",
+  "keywords": ["sdlc", "git", "commit", "github", "pull-request"]
+}

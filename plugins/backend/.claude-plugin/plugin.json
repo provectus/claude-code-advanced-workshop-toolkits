@@ -1,0 +1,11 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend engineering: Kotlin skill and Kotlin engineer agent.",
+  "author": {
+    "name": "Claude Code Advanced Workshop",
+    "email": "mminasian-claudeai@provectus.com"
+  },
+  "license": "MIT",
+  "keywords": ["backend", "kotlin", "jvm", "agent"]
+}
