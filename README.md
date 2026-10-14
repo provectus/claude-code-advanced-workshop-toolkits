@@ -10,7 +10,7 @@ A Claude Code plugin marketplace. It lists the plugins in `plugins/` through `.c
 | `sdlc` | `commit` and `github-cli` skills |
 | `frontend` | `typescript` skill, `typescript-engineer` agent, TypeScript LSP |
 | `backend` | `kotlin` skill, `kotlin-engineer` agent |
-| `misc` | `search-kb` skill, `qmd` MCP server, sample KB + `install-kb.sh`, SessionStart hook that tells you if the KB isn't set up |
+| `misc` | `search-kb` skill (runs the KB setup itself on first use), `qmd` MCP server, sample KB + `install-kb.sh` |
 
 ## Layout
 
@@ -44,9 +44,7 @@ corporeation-claude-plugin/
         ├── .claude-plugin/plugin.json
         ├── .mcp.json                 # qmd MCP server (runs the installed `qmd`)
         ├── kb/                       # sample company knowledge base (markdown)
-        ├── hooks/hooks.json          # SessionStart: runs check-kb.sh
         ├── scripts/install-kb.sh     # installs qmd + the KB, builds the index
-        ├── scripts/check-kb.sh       # prints a setup hint if qmd or the KB is missing
         └── skills/search-kb/SKILL.md
 ```
 
@@ -76,7 +74,7 @@ For local testing use `/plugin marketplace add ./corporeation-claude-plugin` ins
 |--------|-------|
 | `sdlc` | `git`, and `gh` authenticated (`gh auth login`) for `github-cli` |
 | `frontend` | TypeScript 7+ on PATH: `npm install -g typescript` (the LSP runs `tsc --lsp --stdio`) |
-| `misc` | Node.js 22+, then run `bash plugins/misc/scripts/install-kb.sh` once. It installs qmd globally, copies the KB to `~/.local/share/corporeation-kb` and indexes it. The first run downloads ~2 GB of local models. Restart Claude Code afterwards. Until then, a message at session start shows the exact command to run |
+| `misc` | Node.js 22+. The first time you search the KB, the `search-kb` skill runs `install-kb.sh` for you. If you deny that, it asks you to run it with `!`. The script installs qmd globally, copies the KB to `~/.local/share/corporeation-kb` and indexes it, and the first run downloads ~2 GB of local models. If qmd was missing before, reconnect it with `/mcp` (or restart Claude Code) afterwards. You can also run `bash plugins/misc/scripts/install-kb.sh` yourself ahead of time |
 
 To share it with a team automatically, add it to the project's `.claude/settings.json`:
 
