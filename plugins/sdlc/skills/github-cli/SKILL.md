@@ -9,8 +9,9 @@ description: >-
   a pull request", "make an MR", "PR this branch", "ready for review", "send
   this for review", "review this PR", "audit PR #N", "review someone's PR",
   "code review", "fix review comments", "address feedback", "apply the
-  review changes", "iterate on the PR", or otherwise signals they want to
-  publish, audit, or iterate on work in GitHub. Also use it proactively
+  review changes", "iterate on the PR", "list PRs", "any open PRs?", "what
+  PRs are open", "show my PRs", "what's waiting on my review", or otherwise
+  signals they want to publish, audit, iterate on, or list work in GitHub. Also use it proactively
   after a feature branch is finished, a bug is identified, or a reviewer
   has left comments — the user may not name the artifact ("can you put
   this on GitHub for the team?", "let's clear out the comments on PR
@@ -24,7 +25,7 @@ description: >-
 
 # GitHub CLI: Issues, PRs, Reviews, and Fixes
 
-This skill covers the four most common `gh` flows for working on a
+This skill covers the five most common `gh` flows for working on a
 GitHub repo from the terminal. Each flow has its own reference doc with
 the full workflow, commands, and templates. This file just routes you
 to the right one and states the principles that apply to all of them.
@@ -42,14 +43,16 @@ Pick the matching reference doc and read **only that one**:
   [`references/review.md`](references/review.md)
 - **Address review feedback on your PR** (fetch comments, implement
   fixes, push, summarize) → [`references/fix.md`](references/fix.md)
+- **List open PRs** (read-only: what's open, mine, awaiting my review,
+  optional CI status) → [`references/list.md`](references/list.md)
 
 If the request is ambiguous (*"open something on GitHub"*, *"do
 something with PR #142"*), ask before loading any doc — the workflows
 diverge sharply and guessing wastes a round-trip. Phrase the question
 concretely: *"File an issue, open a PR for this branch, review someone
-else's PR, or address review feedback on your own PR?"*
+else's PR, address review feedback on your own PR, or list open PRs?"*
 
-## Principles that apply to both flows
+## Principles that apply to every flow
 
 The reference docs contain the *how*. These are the *why*.
 
@@ -60,7 +63,8 @@ The reference docs contain the *how*. These are the *why*.
    mismatches faster than logic mistakes — read recent issues / merged
    PRs and mirror their structure, length, labels, and prefixes. Parity
    beats creativity.
-3. **Draft, then confirm — every time.** Issues and PRs are public,
+3. **Draft, then confirm — every time** (publishing flows; listing is
+   read-only and needs no confirmation). Issues and PRs are public,
    hard-to-edit, and notify other people. Print the proposed title and
    body to the user and wait for explicit yes before running `gh`.
 4. **Preserve formatting via HEREDOC.** When the reference doc shows
@@ -84,8 +88,9 @@ which flow you're in:
   didn't ask for and that aren't already an established convention in
   the repo.
 - Don't use `--force` flags without explicit user authorization.
-- Don't combine flows. If the user asked for one of the four flows
-  (file an issue, open a PR, review a PR, fix review comments), do
+- Don't combine flows. If the user asked for one of the five flows
+  (file an issue, open a PR, review a PR, fix review comments, list
+  PRs), do
   exactly that one — don't slip into another "for completeness".
 - Don't load multiple reference docs at once. Pick one based on the
   user's intent and read only that one.

@@ -1,7 +1,7 @@
 {
   "name": "sdlc",
-  "version": "1.0.0",
-  "description": "Software delivery workflow: convention-aware commits and GitHub issues, PRs and reviews through the gh CLI.",
+  "version": "1.1.0",
+  "description": "Software delivery workflow: convention-aware commits and GitHub issues, PRs, reviews and PR listing through the gh CLI.",
   "author": {
     "name": "Claude Code Advanced Workshop",
     "email": "mminasian-claudeai@provectus.com"
